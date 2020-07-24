@@ -1,7 +1,3 @@
-#if SQLITE_SWIFT_SQLCIPHER
-import SQLCipher
-
-
 /// Extension methods for [SQLCipher](https://www.zetetic.net/sqlcipher/).
 /// @see [sqlcipher api](https://www.zetetic.net/sqlcipher/sqlcipher-api/)
 extension Connection {
@@ -63,4 +59,3 @@ extension Connection {
         let _ = try scalar("SELECT count(*) FROM sqlite_master;")
     }
 }
-#endif
